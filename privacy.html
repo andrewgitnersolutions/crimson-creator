@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Add to NotebookLM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0F0F14;
+      --surface: #1A1A24;
+      --surface-alt: #22222F;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #E4E4ED;
+      --text-dim: #8E8EA0;
+      --accent: #6C8EEF;
+      --accent-soft: rgba(108, 142, 239, 0.12);
+      --radius: 12px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F8F8FC;
+        --surface: #FFFFFF;
+        --surface-alt: #F0F0F6;
+        --border: rgba(0, 0, 0, 0.08);
+        --text: #1C1C2E;
+        --text-dim: #6B6B80;
+        --accent: #4A6FD9;
+        --accent-soft: rgba(74, 111, 217, 0.08);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    .header {
+      margin-bottom: 48px;
+    }
+
+    .header .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .header .updated {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ── Sections ────────────────────────────── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .subsection {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    /* ── Lists ───────────────────────────────── */
+    ul {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .no-list li::before {
+      content: none;
+    }
+
+    .no-list li {
+      padding-left: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .no-list li .icon {
+      flex-shrink: 0;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── Table ───────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      padding: 12px 16px;
+      background: var(--surface-alt);
+      color: var(--text-dim);
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: var(--surface-alt);
+    }
+
+    code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--surface-alt);
+      color: var(--accent);
+    }
+
+    /* ── Divider ─────────────────────────────── */
+    hr {
+      border: none;
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    /* ── Footer ──────────────────────────────── */
+    .footer {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Link ────────────────────────────────── */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="badge">🔒 Privacy Policy</div>
+      <h1>Add to NotebookLM</h1>
+      <p class="updated">Last updated: April 8, 2026</p>
+    </div>
+
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>"Add to NotebookLM" is a Chrome extension that helps you save web pages, Google Docs, Google Slides, Google Sheets, highlighted text, and custom notes directly to your Google NotebookLM notebooks. This privacy policy explains what data the extension accesses, how it is used, and how it is stored.</p>
+    </section>
+
+    <!-- Data Collection -->
+    <section>
+      <h2>Data Collection &amp; Usage</h2>
+
+      <div class="subsection">
+        <h3>Data the extension accesses</h3>
+        <p>When you use the extension, the following data is accessed <strong>only in response to your actions</strong> (clicking "Add this page," selecting text, etc.):</p>
+        <ul>
+          <li><strong>Page URLs</strong> — The URL of the current page, used to add it as a source in NotebookLM.</li>
+          <li><strong>Page titles</strong> — The title of the current page, used as the default name for the source. You can edit this before saving.</li>
+          <li><strong>Selected text</strong> — Text you highlight on a page, only when you choose to add it as a source.</li>
+          <li><strong>Custom text</strong> — Text you type or paste into the extension's text input.</li>
+          <li><strong>Google Drive file identifiers</strong> — For Google Docs, Slides, and Sheets, the document ID is extracted from the URL to link the file to NotebookLM.</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Data stored locally</h3>
+        <p>The following data is stored in your browser's local storage and <strong>never leaves your device</strong>:</p>
+        <ul>
+          <li><strong>Cached notebook list</strong> — Your NotebookLM notebook names and IDs, cached for up to 5 minutes to improve performance.</li>
+          <li><strong>Recent notebook IDs</strong> — Up to 5 recently used notebook IDs for quick access via the right-click menu.</li>
+          <li><strong>UI preferences</strong> — Floating button visibility toggle and button position.</li>
+        </ul>
+        <p>All locally stored data can be cleared at any time by removing the extension.</p>
+      </div>
+
+      <div class="subsection">
+        <h3>Data transmitted to Google</h3>
+        <p>When you add a source, the extension communicates <strong>directly with Google's NotebookLM servers</strong> using your existing Google account session:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Source Type</th>
+                <th>Data Sent to NotebookLM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Web page</td><td>Page URL</td></tr>
+              <tr><td>Google Doc / Slides / Sheets</td><td>Google Drive file ID and document title</td></tr>
+              <tr><td>Selected text</td><td>Your highlighted text and a title</td></tr>
+              <tr><td>Custom text</td><td>The text you typed and a title</td></tr>
+              <tr><td>PDF / file URL</td><td>The file contents and filename</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>This is the same data you would provide if you added sources manually through the NotebookLM website.</p>
+      </div>
+    </section>
+
+    <!-- Data NOT Collected -->
+    <section>
+      <h2>Data NOT Collected</h2>
+      <p>The extension <strong>does not</strong>:</p>
+      <ul class="no-list">
+        <li><span class="icon">❌</span><span>Collect or transmit browsing history</span></li>
+        <li><span class="icon">❌</span><span>Track which pages you visit</span></li>
+        <li><span class="icon">❌</span><span>Send any data to third-party servers, analytics services, or advertisers</span></li>
+        <li><span class="icon">❌</span><span>Store or transmit your Google account credentials or passwords</span></li>
+        <li><span class="icon">❌</span><span>Access page content unless you explicitly interact with the extension</span></li>
+        <li><span class="icon">❌</span><span>Run any background data collection</span></li>
+        <li><span class="icon">❌</span><span>Use cookies or tracking technologies</span></li>
+      </ul>
+    </section>
+
+    <!-- Third-Party Services -->
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>The extension communicates exclusively with Google services:</p>
+      <ul>
+        <li><strong>notebooklm.google.com</strong> — To manage notebooks and add sources</li>
+        <li><strong>docs.google.com</strong> — To identify and link Google Docs, Slides, and Sheets</li>
+      </ul>
+      <p>No other third-party services are contacted.</p>
+    </section>
+
+    <!-- Permissions -->
+    <section>
+      <h2>Permissions Explained</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Why It's Needed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>storage</code></td><td>Save your preferences and cache notebook data locally</td></tr>
+            <tr><td><code>activeTab</code></td><td>Access the current tab's URL and title when you click the extension</td></tr>
+            <tr><td><code>contextMenus</code></td><td>Provide right-click "Add to NotebookLM" options</td></tr>
+            <tr><td>Host permissions</td><td>Communicate with NotebookLM and Google Docs APIs</td></tr>
+            <tr><td>Content script</td><td>Display the floating action button on all pages</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Data Retention -->
+    <section>
+      <h2>Data Retention</h2>
+      <ul>
+        <li><strong>Local cache</strong> expires automatically after 5 minutes.</li>
+        <li><strong>UI preferences</strong> persist until the extension is removed.</li>
+        <li><strong>No data is retained on any server</strong> controlled by the extension developer. Sources you add are stored by Google in your NotebookLM account, subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+      </ul>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>This extension is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+    </section>
+
+    <!-- Changes -->
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>If this privacy policy is updated, the changes will be reflected in the "Last updated" date above. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy, please contact:</p>
+      <p><strong>Andrew Gitner</strong><br>Email: <a href="mailto:Agitner@gmail.com">Agitner@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Add to NotebookLM &middot; v1.1.4 &middot; <a href="https://notebooklm.google.com" target="_blank">Open NotebookLM</a></p>
+    </div>
+
+  </div>
+</body>
+</html>

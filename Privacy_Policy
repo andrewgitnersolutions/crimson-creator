@@ -1,0 +1,95 @@
+# Privacy Policy — Add to NotebookLM
+
+**Last updated:** April 8, 2026
+
+## Overview
+
+"Add to NotebookLM" is a Chrome extension that helps you save web pages, Google Docs, Google Slides, Google Sheets, highlighted text, and custom notes directly to your Google NotebookLM notebooks. This privacy policy explains what data the extension accesses, how it is used, and how it is stored.
+
+## Data Collection & Usage
+
+### Data the extension accesses
+
+When you use the extension, the following data is accessed **only in response to your actions** (clicking "Add this page," selecting text, etc.):
+
+- **Page URLs** — The URL of the current page, used to add it as a source in NotebookLM.
+- **Page titles** — The title of the current page, used as the default name for the source. You can edit this before saving.
+- **Selected text** — Text you highlight on a page, only when you choose to add it as a source.
+- **Custom text** — Text you type or paste into the extension's text input.
+- **Google Drive file identifiers** — For Google Docs, Slides, and Sheets, the document ID is extracted from the URL to link the file to NotebookLM.
+
+### Data the extension stores locally
+
+The following data is stored in your browser's local storage (`chrome.storage.local`) and **never leaves your device**:
+
+- **Cached notebook list** — Your NotebookLM notebook names and IDs, cached for up to 5 minutes to improve performance.
+- **Recent notebook IDs** — Up to 5 recently used notebook IDs for quick access via the right-click menu.
+- **UI preferences** — Floating button visibility toggle and button position.
+
+All locally stored data can be cleared at any time by removing the extension.
+
+### Data transmitted to Google
+
+When you add a source, the extension communicates **directly with Google's NotebookLM servers** (`notebooklm.google.com`) using your existing Google account session. The following data is sent depending on the source type:
+
+| Source Type | Data Sent to NotebookLM |
+|---|---|
+| Web page | Page URL |
+| Google Doc / Slides / Sheets | Google Drive file ID and document title |
+| Selected text | Your highlighted text and a title |
+| Custom text | The text you typed and a title |
+| PDF / file URL | The file contents and filename |
+
+This is the same data you would provide if you added sources manually through the NotebookLM website.
+
+## Data NOT Collected
+
+The extension **does not**:
+
+- ❌ Collect or transmit browsing history
+- ❌ Track which pages you visit
+- ❌ Send any data to third-party servers, analytics services, or advertisers
+- ❌ Store or transmit your Google account credentials or passwords
+- ❌ Access page content unless you explicitly interact with the extension
+- ❌ Run any background data collection
+- ❌ Use cookies or tracking technologies
+
+## Third-Party Services
+
+The extension communicates exclusively with Google services:
+
+- **notebooklm.google.com** — To manage notebooks and add sources
+- **docs.google.com** — To identify and link Google Docs, Slides, and Sheets
+
+No other third-party services are contacted.
+
+## Permissions Explained
+
+| Permission | Why It's Needed |
+|---|---|
+| `storage` | Save your preferences and cache notebook data locally |
+| `activeTab` | Access the current tab's URL and title when you click the extension |
+| `contextMenus` | Provide right-click "Add to NotebookLM" options |
+| `host_permissions` (Google domains) | Communicate with NotebookLM and Google Docs APIs |
+| Content script (`<all_urls>`) | Display the floating action button on all pages |
+
+## Data Retention
+
+- **Local cache** expires automatically after 5 minutes.
+- **UI preferences** persist until the extension is removed.
+- **No data is retained on any server** controlled by the extension developer. Sources you add are stored by Google in your NotebookLM account, subject to [Google's Privacy Policy](https://policies.google.com/privacy).
+
+## Children's Privacy
+
+This extension is not directed at children under 13 and does not knowingly collect personal information from children.
+
+## Changes to This Policy
+
+If this privacy policy is updated, the changes will be reflected in the "Last updated" date above. Continued use of the extension after changes constitutes acceptance of the updated policy.
+
+## Contact
+
+If you have questions about this privacy policy, please contact:
+
+**Andrew Gitner**
+Email: <Agitner@gmail.com>
